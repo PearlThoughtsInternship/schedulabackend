@@ -3,7 +3,7 @@ models:
   Doctor:
     hasMany: [Availability, Session]
     # count: 1
-    _.data: [
+    data: [
         {
           name: Dr. John Doe,
           specialization: Cardiologist,
