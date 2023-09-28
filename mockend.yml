@@ -3,17 +3,17 @@ models:
   Doctor:
     hasMany: [Availability, Session]
     # count: 1
-    data: [
+    _.data: [
         {
-          name: Dr. John Doe,
-          specialization: Cardiologist,
+          name: Dr. John Doe',
+          specialization: 'Cardiologist',
           ivrNumber: +1-123-456-7890,
-          description: M.B.B.S., M.S.(Cardio),
-          gender: Male,
+          description: 'M.B.B.S., M.S.(Cardio)',
+          gender: 'Male',
           isAvailable: true,
-          address: 123 Main Street,
-          location: Cityville,
-          createdAt: 2015-01-01T00:00:00Z,
+          address: '123 Main Street',
+          location: 'Cityville',
+          createdAt: '2015-01-01T00:00:00Z',
         },
       ]
   Availability:
@@ -23,8 +23,8 @@ models:
         {
           doctorId: 1,
           days: [1, 2, 3],
-          timeslots: ["9 AM to 12 PM"],
-          createdAt: "2015-01-01T00:00:00Z",
+          timeslots: ['9 AM to 12 PM'],
+          createdAt: '2015-01-01T00:00:00Z',
         },
       ]
   Session:
@@ -34,10 +34,10 @@ models:
         {
           doctorId: 1,
           consultingDays: [1, 2, 3],
-          consultingFromTime: "9:30 AM",
-          consultingToTime: "12:00 PM",
-          bookingFromTime: "8:00 AM",
-          bookingToTime": "11:30 AM",
-          createdAt: "2015-01-01T00:00:00Z",
+          consultingFromTime: '9:30 AM',
+          consultingToTime: '12:00 PM',
+          bookingFromTime: '8:00 AM',
+          bookingToTime': '11:30 AM',
+          createdAt: '2015-01-01T00:00:00Z',
         },
       ]
