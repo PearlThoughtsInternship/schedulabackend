@@ -57,10 +57,10 @@
             }
         },
         "days": {
-            "oneOfInt": []
+            "string": []
         },
         "timeslots": {
-            "oneOfString": []
+            "string": []
         },
         "createdAt": {
             "dateTime": {
