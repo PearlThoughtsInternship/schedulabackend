@@ -15,36 +15,27 @@ models:
         createdAt: "2015-01-01T00:00:00Z"
       }
     ]
-    # fake:
-    #   id: { int: [1, 12]}
-    #   _count: 20
-    #   name: { string: [5,20]}
-    #   specialization: { string: [5,50]}
-    #   description: { string: [5,100]}
-    #   gender: { string: [0,6]}
-    #   createdAt: { dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
-    #   isAvailable: { bool: 20 }
-    #   address: { string: [5, 100]}
-    #   location:  { string: [5, 50]}
   Availability:
     belongsTo: [Doctor]
-    fake:
-      id: {int: [0, 12]}
-      _count: 1
-      doctorId: {int: [1, 12]}
-      days: { oneOfInt: [ 1, 3, 4]}
-      timeslots: { oneOfString: ["a", "b", "c"]}
-      createdAt: {dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
+    data: [
+      {
+        doctorId : 1,
+        days: [ 1, 2, 3],
+        timeslots: [ "9 AM to 12 PM"],
+        createdAt: "2015-01-01T00:00:00Z"
+      }
+    ]
   Session:
     belongsTo: [Doctor]
-    fake:
-      _count: 1
-      id: {int: [1, 12]}
-      doctorId: {int: [1, 12]}
-      consultingDays: [1, 2, 3]
-      consultingFromTime:  hour 
-      consultingToTime:  hour  
-      bookingFromTime:  hour 
-      bookingToTime: hour
-      createdAt: {dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z]}
+    data: [
+      {
+        doctorId : 1,
+        consultingDays: [1, 2, 3],
+        consultingFromTime: "9:30 AM",
+        consultingToTime: "12:00 PM",
+        bookingFromTime: "8:00 AM",
+        bookingToTime: "11:30 AM",
+        createdAt: "2015-01-01T00:00:00Z"
+      }
+    ]
 
