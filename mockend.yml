@@ -27,9 +27,8 @@ models:
       id: {int: [0, 12]}
       doctorId: {int: [0, 12]}
       consultingDays: {array: {of: {int: {min: 1, max: 7}}, length: {min: 1, max: 7}}}
-      consultingFromTime:   {oneOf: ["8:00 AM", "9:00 AM", "10:00 AM", "1:00 PM", "2:00 PM"]}
-      consultingToTime:   {oneOf: ["8:00 AM", "9:00 AM", "10:00 AM", "1:00 PM", "2:00 PM"]}
-      bookingFromTime:   {oneOf: ["8:00 AM", "9:00 AM", "10:00 AM", "1:00 PM", "2:00 PM"]} 
-      bookingToTime:   {oneOf: ["8:00 AM", "9:00 AM", "10:00 AM", "1:00 PM", "2:00 PM"]}
+      consultingFromTime:  {string: {time: true, format: "H:mm A"}} 
+      consultingToTime:  {string: {time: true, format: "H:mm A"}} 
+      bookingFromTime:  {string: {time: true, format: "H:mm A"}} 
+      bookingToTime:  {string: {time: true, format: "H:mm A"}} 
       createdAt: {dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z]}
-
