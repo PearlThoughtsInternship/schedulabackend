@@ -1,7 +1,7 @@
 #key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
 models:
   Doctor:
-    hasMany: [Availability, Session ]
+    hasMany: [Availability,Session]
     data: [
         { 
           name: "Dr. John Doe",
@@ -26,8 +26,8 @@ models:
         }
       ]
   Session:
-     belongsTo: [Doctor]
-     data: [
+    belongsTo: [Doctor]
+    data: [
         {
           doctorId: 1,
           consultingDays: [1, 2, 3],
