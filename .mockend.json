@@ -1,62 +1,6 @@
 {
     "Doctor": {
-        "_": {
-            "items": 20
-        },
-        "id": {
-            "int": {
-                "min": 1,
-                "max": 12
-            }
-        },
-        "name": {
-            "string": {
-                "minLength": 5,
-                "maxLength": 20
-            }
-        },
-        "specialization": {
-            "string": {
-                "minLength": 5,
-                "maxLength": 50
-            }
-        },
-        "description": {
-            "string": {
-                "minLength": 5,
-                "maxLength": 100
-            }
-        },
-        "address": {
-            "string": {
-                "minLength": 5,
-                "maxLength": 100
-            }
-        },
-        "location": {
-            "string": {
-                "minLength": 5,
-                "maxLength": 50
-            }
-        },
-        "gender": {
-            "string": {
-                "minLength": 0,
-                "maxLength": 6
-            }
-        },
-        "isAvailable": {
-            "boolean": {}
-        },
-        "createdAt": {
-            "dateTime": {
-                "min": "2015-01-01T00:00:00Z",
-                "max": "2023-12-31T23:59:59Z"
-            }
-        },
-        "availabilities": {
-            "hasMany": "Availability"
-        }
+        "_.data": {}
     },
     "Availability": {
         "_": {
@@ -76,7 +20,7 @@
         },
         "days": {
             "oneOfInt": {
-                "int":{
+                "int": {
                     "min": 1,
                     "max": 6
                 }
