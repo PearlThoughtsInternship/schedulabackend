@@ -28,7 +28,7 @@ models:
       _count: 10
       id: {int: [1, 12]}
       doctorId: {int: [1, 12]}
-      consultingDays: { oneOfInt : [ 1, 2, 3]}
+      consultingDays: oneOfInt
       consultingFromTime:  hour 
       consultingToTime:  hour  
       bookingFromTime:  hour 
