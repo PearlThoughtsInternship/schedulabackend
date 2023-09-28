@@ -1,0 +1,79 @@
+{
+    "Doctor": {
+        "_": {
+            "items": 20
+        },
+        "id": {
+            "int": {
+                "min": 0,
+                "max": 12
+            }
+        },
+        "name": {
+            "loremWords": {
+                "minLength": 5,
+                "maxLength": 20
+            }
+        },
+        "specialty": {
+            "loremWords": {
+                "minLength": 5,
+                "maxLength": 50
+            }
+        },
+        "description": {
+            "loremWords": {
+                "minLength": 5,
+                "maxLength": 100
+            }
+        },
+        "gender": {
+            "loremWords": {
+                "minLength": 5,
+                "maxLength": 20
+            }
+        },
+        "isAvailable": {
+            "boolean": {}
+        },
+        "createdAt": {
+            "dateTime": {
+                "min": "2010-23-01T00:00:00Z",
+                "max": "2020-40-31T23:59:59Z"
+            }
+        },
+        "availability": {
+            "hasMany": "Availability"
+        }
+    },
+    "Availability": {
+        "_": {},
+        "id": {
+            "int": {
+                "min": 0,
+                "max": 12
+            }
+        },
+        "doctorId": {
+            "int": {
+                "min": 0,
+                "max": 12
+            }
+        },
+        "days": {
+            "string": []
+        },
+        "timeslots": {
+            "string": []
+        },
+        "createdAt": {
+            "dateTime": {
+                "min": "2010-23-01T00:00:00Z",
+                "max": "2020-40-31T23:59:59Z"
+            }
+        },
+        "doctor": {
+            "belongsTo": "Doctor"
+        }
+    }
+}
