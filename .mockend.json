@@ -129,22 +129,13 @@
             "hour": {}
         },
         "consultingToTime": {
-            "hour": {
-                "start": 10,
-                "end": 14
-            }
+            "hour": {}
         },
         "bookingFromTime": {
-            "hour": {
-                "start": 9,
-                "end": 14
-            }
+            "hour": {}
         },
         "bookingToTime": {
-            "hour": {
-                "start": 9,
-                "end": 14
-            }
+            "hour": {}
         },
         "createdAt": {
             "dateTime": {
