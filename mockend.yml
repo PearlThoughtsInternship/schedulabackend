@@ -16,6 +16,7 @@ models:
   Availability:
     belongsTo: [Doctor]
       fake:
+       _count: 40
         id: {int: [0, 12]}
         days: []
         timeslots: []
