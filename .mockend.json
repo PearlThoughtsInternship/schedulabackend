@@ -2,7 +2,7 @@
     
     "Availability": {
         "_": {
-            "items": 40
+            "items": 1
         },
         "id": {
             "int": {
@@ -43,7 +43,7 @@
     },
     "Session": {
         "_": {
-            "items": 40
+            "items": 1
         },
         "id": {
             "int": {
