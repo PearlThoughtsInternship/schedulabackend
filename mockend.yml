@@ -16,7 +16,7 @@ models:
   Availability:
     belongsTo: [Doctor]
       fake:
-       id: id
+       id: {int: [0, 12]}
        day: {string: [0, 20]}
        timeslots: []
        doctorId: {int: [0, 12]}
