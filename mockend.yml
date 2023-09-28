@@ -41,3 +41,5 @@ models:
           createdAt: '2015-01-01T00:00:00Z',
         },
       ]
+  Post:
+    data: [{ title: 'Title 1' }, { title: 'Title 2' }]
