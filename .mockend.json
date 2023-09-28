@@ -22,7 +22,7 @@
             }
         },
         "description": {
-            "loremWords": {
+            "loremParagraphs": {
                 "minLength": 5,
                 "maxLength": 100
             }
