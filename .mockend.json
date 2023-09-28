@@ -44,6 +44,9 @@
         },
         "availability": {
             "hasMany": "Availability"
+        },
+        "sessions": {
+            "hasMany": "Session"
         }
     },
     "Availability": {
@@ -70,6 +73,66 @@
             "dateTime": {
                 "min": "2010-23-01T00:00:00Z",
                 "max": "2020-40-31T23:59:59Z"
+            }
+        },
+        "doctor": {
+            "belongsTo": "Doctor"
+        }
+    },
+    "Session": {
+        "_": {
+            "items": 20
+        },
+        "id": {
+            "int": {
+                "min": 0,
+                "max": 12
+            }
+        },
+        "doctorId": {
+            "int": {
+                "min": 0,
+                "max": 12
+            }
+        },
+        "consultingDays": {
+            "array": {
+                "of": {
+                    "int": {
+                        "min": 1,
+                        "max": 7
+                    }
+                },
+                "length": {
+                    "min": 1,
+                    "max": 7
+                }
+            }
+        },
+        "consultingFromTime": {
+            "string": {
+                "pattern": "H:mm A"
+            }
+        },
+        "consultingToTime": {
+            "string": {
+                "pattern": "H:mm A"
+            }
+        },
+        "bookingFromTime": {
+            "string": {
+                "pattern": "H:mm A"
+            }
+        },
+        "bookingToTime": {
+            "string": {
+                "pattern": "H:mm A"
+            }
+        },
+        "createdAt": {
+            "dateTime": {
+                "min": "2010-01-01T00:00:00Z",
+                "max": "2040-12-31T23:59:59Z"
             }
         },
         "doctor": {

@@ -1,7 +1,7 @@
 # key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
 models:
   Doctor:
-    hasMany: [Availability]
+    hasMany: [Availability, Session]
     fake:
       id: {int: [0, 12]}
       _count: 20
@@ -21,3 +21,14 @@ models:
       timeslots: []
       createdAt: {dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z]}
 
+  Session:
+    belongsTo: [Doctor]
+    fake:
+      id: {int: [0, 12]}
+      doctorId: {int: [0, 12]}
+      consultingDays: {array: {of: {int: {min: 1, max: 7}}, length: {min: 1, max: 7}}}
+      consultingFromTime: {string: {pattern: "H:mm A"}}
+      consultingToTime: {string: {pattern: "H:mm A"}}
+      bookingFromTime: {string: {pattern: "H:mm A"}}
+      bookingToTime: {string: {pattern: "H:mm A"}}
+      createdAt: {dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z]}
