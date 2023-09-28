@@ -5,10 +5,10 @@ models:
     hasMany: [Availability]
     fake:
       id: {int: [0, 12]}
-      count: 20
-      name: { loremWords: [0,20]}
-      specialty: { loremWords: [0,50]}
-      description: { loremParagraphs: [0,50]}
+      _count: 20
+      name: { loremWords: [5,20]}
+      specialty: { loremWords: [5,50]}
+      description: { loremParagraphs: [5,100]}
       gender: { loremWords: [0,6]}
       createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
       isAvailable: { bool: 20 }
