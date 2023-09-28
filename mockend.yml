@@ -1,7 +1,7 @@
 # key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
 
 models:
-  Doctors:
+  Doctor:
   hasMany: [Availability]
   fake:
     id: {int: [0, 12]}
@@ -12,8 +12,8 @@ models:
     createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
     isAvailable: { bool: 20 }
 
-  Availability :
-    belongsTo: [Doctors]
+  Availability:
+    belongsTo: [Doctor]
       fake:
        id: id
        day: {string: [0, 20]}
