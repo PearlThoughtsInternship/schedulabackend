@@ -3,6 +3,7 @@ models:
   Doctor:
     hasMany: [Availability, Session]
     # count: 1
+    fake:
     data: [
         {
           name: 'Dr. John Doe',
