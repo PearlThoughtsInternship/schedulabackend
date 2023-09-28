@@ -1,12 +1,19 @@
-key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
+# key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
 
 models:
   Doctors:
+  hasMany: [Availability]
   fake:
-    id: id
+    id: {int: [0, 12]}
     count: 20
     name: { string: [0,20]}
-    availability: { }
     specialty: { string: [0,20]}
     gender: { string: [0,6]}
 
+  Availability :
+    belongsTo: [Doctors]
+      fake:
+       id: id
+       day: {string: [0, 20]}
+       timeslots: []
+       doctorId: {int: [0, 12]}
