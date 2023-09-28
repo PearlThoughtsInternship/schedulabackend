@@ -3,20 +3,21 @@
 models:
   Doctor:
     hasMany: [Availability]
-  fake:
-    id: {int: [0, 12]}
-    count: 20
-    name: { string: [0,20]}
-    specialty: { string: [0,50]}
-    description: { string: [0,50]}
-    gender: { string: [0,6]}
-    createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
-    isAvailable: { bool: 20 }
+    fake:
+      id: {int: [0, 12]}
+      count: 20
+      name: { string: [0,20]}
+      specialty: { string: [0,50]}
+      description: { string: [0,50]}
+      gender: { string: [0,6]}
+      createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
+      isAvailable: { bool: 20 }
+      
   Availability:
     belongsTo: [Doctor]
       fake:
-       id: {int: [0, 12]}
-       days: []
-       timeslots: []
-       doctorId: {int: [0, 12]}
-       createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
+        id: {int: [0, 12]}
+        days: []
+        timeslots: []
+        doctorId: {int: [0, 12]}
+        createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
