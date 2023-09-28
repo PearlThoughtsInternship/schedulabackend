@@ -1,41 +1,12 @@
 {
-    
+    "Doctor": {
+        "_": {
+            "items": 1
+        }
+    },
     "Availability": {
         "_": {
             "items": 1
-        },
-        "id": {
-            "int": {
-                "min": 1,
-                "max": 12
-            }
-        },
-        "doctorId": {
-            "int": {
-                "min": 1,
-                "max": 12
-            }
-        },
-        "days": {
-            "oneOfInt": {
-                "int": {
-                    "min": 1,
-                    "max": 6
-                }
-            }
-        },
-        "timeslots": {
-            "oneOfString": [
-                "a",
-                "b",
-                "c"
-            ]
-        },
-        "createdAt": {
-            "dateTime": {
-                "min": "2015-01-01T00:00:00Z",
-                "max": "2023-12-31T23:59:59Z"
-            }
         },
         "doctor": {
             "belongsTo": "Doctor"
@@ -44,52 +15,6 @@
     "Session": {
         "_": {
             "items": 1
-        },
-        "id": {
-            "int": {
-                "min": 1,
-                "max": 12
-            }
-        },
-        "doctorId": {
-            "int": {
-                "min": 1,
-                "max": 12
-            }
-        },
-        "consultingDays": {
-            "oneOfInt": [
-                1,
-                2,
-                3
-            ]
-        },
-        "consultingFromTime": {
-            "hour": {}
-        },
-        "consultingToTime": {
-            "hour": {
-                "start": 10,
-                "end": 14
-            }
-        },
-        "bookingFromTime": {
-            "hour": {
-                "start": 9,
-                "end": 14
-            }
-        },
-        "bookingToTime": {
-            "hour": {
-                "start": 9,
-                "end": 14
-            }
-        },
-        "createdAt": {
-            "dateTime": {
-                "min": "2015-01-01T00:00:00Z",
-                "max": "2023-12-31T23:59:59Z"
-            }
         },
         "doctor": {
             "belongsTo": "Doctor"
