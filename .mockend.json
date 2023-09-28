@@ -2,11 +2,89 @@
     "Doctor": {
         "_": {
             "items": 1
+        },
+        "id": {
+            "int": {
+                "min": 1,
+                "max": 12
+            }
+        },
+        "name": {
+            "string": {
+                "minLength": 5,
+                "maxLength": 20
+            }
+        },
+        "specialization": {
+            "string": {
+                "minLength": 5,
+                "maxLength": 50
+            }
+        },
+        "description": {
+            "string": {
+                "minLength": 5,
+                "maxLength": 100
+            }
+        },
+        "address": {
+            "string": {
+                "minLength": 5,
+                "maxLength": 100
+            }
+        },
+        "location": {
+            "string": {
+                "minLength": 5,
+                "maxLength": 50
+            }
+        },
+        "gender": {
+            "string": {
+                "minLength": 0,
+                "maxLength": 6
+            }
+        },
+        "isAvailable": {
+            "boolean": {}
+        },
+        "createdAt": {
+            "dateTime": {
+                "min": "2015-01-01T00:00:00Z",
+                "max": "2023-12-31T23:59:59Z"
+            }
+        },
+        "availabilities": {
+            "hasMany": "Availability"
         }
     },
     "Availability": {
         "_": {
             "items": 1
+        },
+        "id": {
+            "int": {
+                "min": 1,
+                "max": 12
+            }
+        },
+        "doctorId": {
+            "int": {
+                "min": 1,
+                "max": 12
+            }
+        },
+        "days": {
+            "intOf": [ 1, 2, 4]
+        },
+        "timeslots": {
+            "stringOf": ["a"]
+        },
+        "createdAt": {
+            "dateTime": {
+                "min": "2015-01-01T00:00:00Z",
+                "max": "2023-12-31T23:59:59Z"
+            }
         },
         "doctor": {
             "belongsTo": "Doctor"
@@ -15,6 +93,55 @@
     "Session": {
         "_": {
             "items": 1
+        },
+        "id": {
+            "int": {
+                "min": 1,
+                "max": 12
+            }
+        },
+        "doctorId": {
+            "int": {
+                "min": 1,
+                "max": 12
+            }
+        },
+        "consultingDays": {
+            "intOf": [
+                1,
+                2,
+                3
+            ]
+        },
+        "consultingFromTime": {
+            "hour": {
+                "start": 10,
+                "end": 14
+            }
+        },
+        "consultingToTime": {
+            "hour": {
+                "start": 10,
+                "end": 14
+            }
+        },
+        "bookingFromTime": {
+            "hour": {
+                "start": 9,
+                "end": 14
+            }
+        },
+        "bookingToTime": {
+            "hour": {
+                "start": 9,
+                "end": 14
+            }
+        },
+        "createdAt": {
+            "dateTime": {
+                "min": "2015-01-01T00:00:00Z",
+                "max": "2023-12-31T23:59:59Z"
+            }
         },
         "doctor": {
             "belongsTo": "Doctor"
