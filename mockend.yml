@@ -1,45 +1,45 @@
 #key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
 models:
-  Doctor:
-    hasMany: [Availability, Session]
-    # count: 1
-    data: [
-        {
-          "name": 'Dr. John Doe',
-          "specialization": 'Cardiologist',
-          "ivrNumber": '+1-123-456-7890',
-          "description": 'M.B.B.S., M.S.(Cardio)',
-          "gender": 'Male',
-          "isAvailable": true,
-          "address": '123 Main Street',
-          "location": 'Cityville',
-          "createdAt": '2015-01-01T00:00:00Z',
-        },
-      ]
-  Availability:
-    belongsTo: [Doctor]
-    # count: 1
-    data: [
-        {
-          doctorId: 1,
-          days: [1, 2, 3],
-          timeslots: ['9 AM to 12 PM'],
-          createdAt: '2015-01-01T00:00:00Z',
-        },
-      ]
-  Session:
-    belongsTo: [Doctor]
-    count: 1
-    data: [
-        {
-          doctorId: 1,
-          consultingDays: [1, 2, 3],
-          consultingFromTime: '9:30 AM',
-          consultingToTime: '12:00 PM',
-          bookingFromTime: '8:00 AM',
-          bookingToTime': '11:30 AM',
-          createdAt: '2015-01-01T00:00:00Z',
-        },
-      ]
+  # Doctor:
+  #   hasMany: [Availability, Session]
+  #   # count: 1
+  #   data: [
+  #       {
+  #         "name": 'Dr. John Doe',
+  #         "specialization": 'Cardiologist',
+  #         "ivrNumber": '+1-123-456-7890',
+  #         "description": 'M.B.B.S., M.S.(Cardio)',
+  #         "gender": 'Male',
+  #         "isAvailable": true,
+  #         "address": '123 Main Street',
+  #         "location": 'Cityville',
+  #         "createdAt": '2015-01-01T00:00:00Z',
+  #       },
+  #     ]
+  # Availability:
+  #   belongsTo: [Doctor]
+  #   # count: 1
+  #   data: [
+  #       {
+  #         doctorId: 1,
+  #         days: [1, 2, 3],
+  #         timeslots: ['9 AM to 12 PM'],
+  #         createdAt: '2015-01-01T00:00:00Z',
+  #       },
+  #     ]
+  # Session:
+  #   belongsTo: [Doctor]
+  #   count: 1
+  #   data: [
+  #       {
+  #         doctorId: 1,
+  #         consultingDays: [1, 2, 3],
+  #         consultingFromTime: '9:30 AM',
+  #         consultingToTime: '12:00 PM',
+  #         bookingFromTime: '8:00 AM',
+  #         bookingToTime': '11:30 AM',
+  #         createdAt: '2015-01-01T00:00:00Z',
+  #       },
+  #     ]
   Post:
     data: [{ title: 'Title 1' }, { title: 'Title 2' }]
