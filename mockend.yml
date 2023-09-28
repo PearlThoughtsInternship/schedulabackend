@@ -27,8 +27,8 @@ models:
       id: {int: [0, 12]}
       doctorId: {int: [0, 12]}
       consultingDays: {array: {of: {int: {min: 1, max: 7}}, length: {min: 1, max: 7}}}
-      consultingFromTime: {string: {pattern: "H:mm A"}}
-      consultingToTime: {string: {pattern: "H:mm A"}}
-      bookingFromTime: {string: {pattern: "H:mm A"}}
-      bookingToTime: {string: {pattern: "H:mm A"}}
+      consultingFromTime:  {string: {time: true, format: "H:mm A"}} 
+      consultingToTime:  {string: {time: true, format: "H:mm A"}} 
+      bookingFromTime:  {string: {time: true, format: "H:mm A"}} 
+      bookingToTime:  {string: {time: true, format: "H:mm A"}} 
       createdAt: {dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z]}
