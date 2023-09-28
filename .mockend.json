@@ -123,10 +123,7 @@
             ]
         },
         "consultingFromTime": {
-            "hour": {
-                "start": 10,
-                "end": 14
-            }
+            "hour": {}
         },
         "consultingToTime": {
             "hour": {

@@ -29,9 +29,9 @@ models:
       id: {int: [1, 12]}
       doctorId: {int: [1, 12]}
       consultingDays: { oneOfInt : [ 1, 2, 3]}
-      consultingFromTime:  { hour: [ 10, 14]} 
-      consultingToTime:  { hour: [ 10, 14]}  
-      bookingFromTime:  { hour: [ 9, 14]} 
-      bookingToTime: { hour: [ 9, 14]}
+      consultingFromTime:  hour 
+      consultingToTime:  hour  
+      bookingFromTime:  hour 
+      bookingToTime: hour
       createdAt: {dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z]}
 
