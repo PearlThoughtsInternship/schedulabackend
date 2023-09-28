@@ -111,22 +111,26 @@
         },
         "consultingFromTime": {
             "string": {
-                "pattern": "H:mm A"
+                "time": true,
+                "format": "H:mm A"
             }
         },
         "consultingToTime": {
             "string": {
-                "pattern": "H:mm A"
+                "time": true,
+                "format": "H:mm A"
             }
         },
         "bookingFromTime": {
             "string": {
-                "pattern": "H:mm A"
+                "time": true,
+                "format": "H:mm A"
             }
         },
         "bookingToTime": {
             "string": {
-                "pattern": "H:mm A"
+                "time": true,
+                "format": "H:mm A"
             }
         },
         "createdAt": {
@@ -139,4 +143,5 @@
             "belongsTo": "Doctor"
         }
     }
+    
 }
