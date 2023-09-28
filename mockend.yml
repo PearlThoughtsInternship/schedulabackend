@@ -2,7 +2,7 @@
 models:
   Doctor:
     hasMany: [Availability,Session]
-    data: [
+    ._data: [
       {
         name : "Dr. John Doe",
         specialization: "Cardiologist",
@@ -17,7 +17,7 @@ models:
     ]
   Availability:
     belongsTo: [Doctor]
-    data: [
+    ._data: [
       {
         doctorId : 1,
         days: [ 1, 2, 3],
@@ -27,7 +27,7 @@ models:
     ]
   Session:
     belongsTo: [Doctor]
-    data: [
+    ._data: [
       {
         doctorId : 1,
         consultingDays: [1, 2, 3],
