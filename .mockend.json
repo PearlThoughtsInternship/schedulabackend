@@ -1,6 +1,8 @@
 {
     "Doctor": {
-        "_": {}
+        "_": {
+            "items": 1
+        }
     },
     "Availability": {
         "_": {
