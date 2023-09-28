@@ -14,7 +14,7 @@ models:
           address: '123 Main Street',
           location: 'Cityville',
           createdAt: '2015-01-01T00:00:00Z',
-        },
+        }
       ]
   Availability:
     belongsTo: [Doctor]
@@ -25,7 +25,7 @@ models:
           days: [1, 2, 3],
           timeslots: ['9 AM to 12 PM'],
           createdAt: '2015-01-01T00:00:00Z',
-        },
+        }
       ]
   Session:
     belongsTo: [Doctor]
@@ -39,7 +39,7 @@ models:
           bookingFromTime: '8:00 AM',
           bookingToTime': '11:30 AM',
           createdAt: '2015-01-01T00:00:00Z',
-        },
+        }
       ]
   Post:
     data: [{ title: 'Title 1' }, { title: 'Title 2' }]
