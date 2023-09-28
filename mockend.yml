@@ -5,15 +5,15 @@ models:
     # count: 1
     _.data: [
         {
-          "name": "Dr. John Doe",
-          "specialization": "Cardiologist",
-          "ivrNumber": +1-123-456-7890,
-          "description": "M.B.B.S., M.S.(Cardio)",
-          "gender": "Male",
-          "isAvailable": true,
-          "address": "123 Main Street",
-          "location": "Cityville",
-          "createdAt": "2015-01-01T00:00:00Z",
+          name: Dr. John Doe,
+          specialization: Cardiologist,
+          ivrNumber: +1-123-456-7890,
+          description: M.B.B.S., M.S.(Cardio),
+          gender: Male,
+          isAvailable: true,
+          address: 123 Main Street,
+          location: Cityville,
+          createdAt: 2015-01-01T00:00:00Z,
         },
       ]
   Availability:
