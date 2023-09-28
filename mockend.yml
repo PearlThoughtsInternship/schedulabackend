@@ -1,21 +1,37 @@
 #key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
 models:
   Doctor:
-    hasMany: [Availability]
+    hasMany: [Availability,Session]
     fake:
-      id: { int: [0, 12]}
+      id: { int: [1, 12]}
       _count: 20
       name: { string: [5,20]}
       specialization: { string: [5,50]}
       description: { string: [5,100]}
       gender: { string: [0,6]}
       createdAt: { dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
-      isAvailable: { bool: 20 } 
-Availability:
+      isAvailable: { bool: 20 }
+      address: { string: [5, 100]}
+      location:  { string: [5, 50]}
+  Availability:
     belongsTo: [Doctor]
     fake:
       id: {int: [0, 12]}
       _count: 40
+      doctorId: {int: [1, 12]}
       days: {oneOfInt: [ 1, 3, 4]}
       timeslots: {oneOfString: []}
       createdAt: {dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
+  Session:
+    belongsTo: [Doctor]
+    fake:
+      _count: 10
+      id: {int: [1, 12]}
+      doctorId: {int: [1, 12]}
+      consultingDays: { oneOfInt : [ 1, 2, 3]}
+      consultingFromTime:  { hour: [ 10, 14]} 
+      consultingToTime:  { hour: [ 10, 14]}  
+      bookingFromTime:  { hour: [ 9, 14]} 
+      bookingToTime: { hour: [ 9, 14]}
+      createdAt: {dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z]}
+
