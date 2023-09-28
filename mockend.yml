@@ -7,7 +7,7 @@ models:
         {
           name: 'Dr. John Doe',
           specialization: 'Cardiologist',
-          ivrNumber: +1-123-456-7890,
+          ivrNumber: '+1-123-456-7890',
           description: 'M.B.B.S., M.S.(Cardio)',
           gender: 'Male',
           isAvailable: true,
