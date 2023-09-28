@@ -1,0 +1,29 @@
+{
+    "Doctor": {
+        "_": {
+            "items": 1
+        },
+        "availabilities": {
+            "hasMany": "Availability"
+        },
+        "sessions": {
+            "hasMany": "Session"
+        }
+    },
+    "Availability": {
+        "_": {
+            "items": 1
+        },
+        "doctor": {
+            "belongsTo": "Doctor"
+        }
+    },
+    "Session": {
+        "_": {
+            "items": 1
+        },
+        "doctor": {
+            "belongsTo": "Doctor"
+        }
+    }
+}
