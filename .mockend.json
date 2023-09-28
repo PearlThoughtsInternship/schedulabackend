@@ -5,6 +5,9 @@
         },
         "availabilities": {
             "hasMany": "Availability"
+        },
+        "sessions": {
+            "hasMany": "Session"
         }
     },
     "Availability": {
