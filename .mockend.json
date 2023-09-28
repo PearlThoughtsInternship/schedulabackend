@@ -75,11 +75,12 @@
             }
         },
         "days": {
-            "oneOfInt": [
-                1,
-                2,
-                4
-            ]
+            "oneOfInt": {
+                "int":{
+                    "min": 1,
+                    "max": 6
+                }
+            }
         },
         "timeslots": {
             "oneOfString": [
