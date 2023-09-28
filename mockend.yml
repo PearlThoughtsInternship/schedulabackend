@@ -2,7 +2,7 @@
 
 models:
   Doctor:
-  hasMany: [Availability]
+    hasMany: [Availability]
   fake:
     id: {int: [0, 12]}
     count: 20
@@ -12,7 +12,6 @@ models:
     gender: { string: [0,6]}
     createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
     isAvailable: { bool: 20 }
-
   Availability:
     belongsTo: [Doctor]
       fake:
