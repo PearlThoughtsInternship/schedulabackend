@@ -1,6 +1,6 @@
 {
     "Doctor": {
-        "_": {
+        "_.data": {
             "items": 1
         },
         "id": {
@@ -59,7 +59,7 @@
         }
     },
     "Availability": {
-        "_": {
+        "_.data": {
             "items": 1
         },
         "id": {
@@ -91,7 +91,7 @@
         }
     },
     "Session": {
-        "_": {
+        "_.data": {
             "items": 1
         },
         "id": {
