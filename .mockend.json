@@ -10,25 +10,25 @@
             }
         },
         "name": {
-            "loremWords": {
+            "string": {
                 "minLength": 5,
                 "maxLength": 20
             }
         },
-        "specialty": {
-            "loremWords": {
+        "specialization": {
+            "string": {
                 "minLength": 5,
                 "maxLength": 50
             }
         },
         "description": {
-            "loremParagraphs": {
+            "string": {
                 "minLength": 5,
                 "maxLength": 100
             }
         },
         "gender": {
-            "loremWords": {
+            "string": {
                 "minLength": 0,
                 "maxLength": 6
             }
@@ -38,38 +38,34 @@
         },
         "createdAt": {
             "dateTime": {
-                "min": "2010-23-01T00:00:00Z",
-                "max": "2020-40-31T23:59:59Z"
+                "min": "2015-01-01T00:00:00Z",
+                "max": "2023-12-31T23:59:59Z"
             }
         },
-        "availability": {
+        "availabilities": {
             "hasMany": "Availability"
         }
     },
     "Availability": {
-        "_": {},
+        "_": {
+            "items": 40
+        },
         "id": {
             "int": {
                 "min": 0,
                 "max": 12
             }
         },
-        "doctorId": {
-            "int": {
-                "min": 0,
-                "max": 12
-            }
-        },
         "days": {
-            "string": []
+            "oneOfInt": []
         },
         "timeslots": {
-            "string": []
+            "oneOfString": []
         },
         "createdAt": {
             "dateTime": {
-                "min": "2010-23-01T00:00:00Z",
-                "max": "2020-40-31T23:59:59Z"
+               "min": "2015-01-01T00:00:00Z",
+                "max": "2023-12-31T23:59:59Z"
             }
         },
         "doctor": {
