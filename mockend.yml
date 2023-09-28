@@ -1,7 +1,7 @@
 #key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
 models:
   Doctor:
-    hasMany: [Availability, Session]
+    hasMany: [Availability]
     # count: 1
     data: [
       {
@@ -21,6 +21,7 @@ models:
     # count: 1
     data: [
       {
+        "doctorId" : 1,
         "days": [ 1, 2, 3],
         "timeslots": [ "9 AM to 12 PM"],
         "createdAt": "2015-01-01T00:00:00Z"
@@ -31,6 +32,7 @@ models:
     # count: 1
     data: [
       {
+        "doctorId" : 1,
         "consultingDays": [1, 2, 3],
         "consultingFromTime": "9:30 AM",
         "consultingToTime": "12:00 PM",
