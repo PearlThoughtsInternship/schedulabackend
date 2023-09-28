@@ -39,4 +39,4 @@ models:
         }
       ]
   Post:
-    _.data: [{ title: "Title 1" }, { title: "Title 2" }]
+    data: [{ title: "Title 1" }, { title: "Title 2" }]
