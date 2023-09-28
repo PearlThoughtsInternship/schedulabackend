@@ -5,30 +5,42 @@
         },
         "id": {
             "int": {
-                "min": 0,
+                "min": 1,
                 "max": 12
             }
         },
         "name": {
-            "loremWords": {
+            "string": {
                 "minLength": 5,
                 "maxLength": 20
             }
         },
-        "specialty": {
-            "loremWords": {
+        "specialization": {
+            "string": {
                 "minLength": 5,
                 "maxLength": 50
             }
         },
         "description": {
-            "loremParagraphs": {
+            "string": {
                 "minLength": 5,
                 "maxLength": 100
             }
         },
+        "address": {
+            "string": {
+                "minLength": 5,
+                "maxLength": 100
+            }
+        },
+        "location": {
+            "string": {
+                "minLength": 5,
+                "maxLength": 50
+            }
+        },
         "gender": {
-            "loremWords": {
+            "string": {
                 "minLength": 0,
                 "maxLength": 6
             }
@@ -38,11 +50,11 @@
         },
         "createdAt": {
             "dateTime": {
-                "min": "2010-23-01T00:00:00Z",
-                "max": "2020-40-31T23:59:59Z"
+                "min": "2015-01-01T00:00:00Z",
+                "max": "2023-12-31T23:59:59Z"
             }
         },
-        "availability": {
+        "availabilities": {
             "hasMany": "Availability"
         },
         "sessions": {
@@ -50,29 +62,40 @@
         }
     },
     "Availability": {
-        "_": {},
+        "_": {
+            "items": 40
+        },
         "id": {
             "int": {
-                "min": 0,
+                "min": 1,
                 "max": 12
             }
         },
         "doctorId": {
             "int": {
-                "min": 0,
+                "min": 1,
                 "max": 12
             }
         },
         "days": {
-            "string": []
+            "oneOfInt": {
+                "int":{
+                    "min": 1,
+                    "max": 6
+                }
+            }
         },
         "timeslots": {
-            "string": []
+            "oneOfString": [
+                "a",
+                "b",
+                "c"
+            ]
         },
         "createdAt": {
             "dateTime": {
-                "min": "2010-23-01T00:00:00Z",
-                "max": "2020-40-31T23:59:59Z"
+                "min": "2015-01-01T00:00:00Z",
+                "max": "2023-12-31T23:59:59Z"
             }
         },
         "doctor": {
@@ -81,58 +104,52 @@
     },
     "Session": {
         "_": {
-            "items": 20
+            "items": 40
         },
         "id": {
             "int": {
-                "min": 0,
+                "min": 1,
                 "max": 12
             }
         },
         "doctorId": {
             "int": {
-                "min": 0,
+                "min": 1,
                 "max": 12
             }
         },
         "consultingDays": {
-            "array": {
-                "of": {
-                    "int": {
-                        "min": 1,
-                        "max": 7
-                    }
-                },
-                "length": {
-                    "min": 1,
-                    "max": 7
-                }
-            }
+            "oneOfInt": [
+                1,
+                2,
+                3
+            ]
         },
         "consultingFromTime": {
-            "string": {
-                "pattern": "H:mm A"
-            }
+            "hour": {}
         },
         "consultingToTime": {
-            "string": {
-                "pattern": "H:mm A"
+            "hour": {
+                "start": 10,
+                "end": 14
             }
         },
         "bookingFromTime": {
-            "string": {
-                "pattern": "H:mm A"
+            "hour": {
+                "start": 9,
+                "end": 14
             }
         },
         "bookingToTime": {
-            "string": {
-                "pattern": "H:mm A"
+            "hour": {
+                "start": 9,
+                "end": 14
             }
         },
         "createdAt": {
             "dateTime": {
-                "min": "2010-01-01T00:00:00Z",
-                "max": "2040-12-31T23:59:59Z"
+                "min": "2015-01-01T00:00:00Z",
+                "max": "2023-12-31T23:59:59Z"
             }
         },
         "doctor": {

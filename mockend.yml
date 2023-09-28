@@ -1,34 +1,37 @@
-# key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
+#key: ewoidXNlciIgOiAiUGVhcmxUaG91Z2h0c0ludGVybnNoaXAiLAoib3JnIiA6IDoiUGVhcmx0aG91Z2h0cy5jb20iCn0= # prevents unauthorized access
 models:
   Doctor:
-    hasMany: [Availability, Session]
+    hasMany: [Availability,Session]
     fake:
-      id: {int: [0, 12]}
+      id: { int: [1, 12]}
       _count: 20
-      name: {loremWords: [5, 20]}
-      specialty: {loremWords: [5, 50]}
-      description: {loremParagraphs: [5, 100]}
-      gender: {loremWords: [0, 6]}
-      createdAt: {dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z]}
-      isAvailable: {bool: 20}
-
+      name: { string: [5,20]}
+      specialization: { string: [5,50]}
+      description: { string: [5,100]}
+      gender: { string: [0,6]}
+      createdAt: { dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
+      isAvailable: { bool: 20 }
+      address: { string: [5, 100]}
+      location:  { string: [5, 50]}
   Availability:
     belongsTo: [Doctor]
     fake:
-      _count: 40
       id: {int: [0, 12]}
-      days: []
-      timeslots: []
-      createdAt: {dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z]}
-
+      _count: 40
+      doctorId: {int: [1, 12]}
+      days: { oneOfInt: [ 1, 3, 4]}
+      timeslots: { oneOfString: ["a", "b", "c"]}
+      createdAt: {dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
   Session:
     belongsTo: [Doctor]
     fake:
-      id: {int: [0, 12]}
-      doctorId: {int: [0, 12]}
-      consultingDays: {array: {of: {int: {min: 1, max: 7}}, length: {min: 1, max: 7}}}
-      consultingFromTime:  {string: {time: true, format: "H:mm A"}} 
-      consultingToTime:  {string: {time: true, format: "H:mm A"}} 
-      bookingFromTime:  {string: {time: true, format: "H:mm A"}} 
-      bookingToTime:  {string: {time: true, format: "H:mm A"}} 
-      createdAt: {dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z]}
+      _count: 10
+      id: {int: [1, 12]}
+      doctorId: {int: [1, 12]}
+      consultingDays: [1, 2, 3]
+      consultingFromTime:  hour 
+      consultingToTime:  hour  
+      bookingFromTime:  hour 
+      bookingToTime: hour
+      createdAt: {dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z]}
+
