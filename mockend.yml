@@ -12,7 +12,7 @@ models:
         isAvailable: true,
         address: "123 Main Street",
         location: "Cityville",
-        createdAt: { dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
+        createdAt: "2015-01-01T00:00:00Z"
       }
     ]
     # fake:
