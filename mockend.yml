@@ -20,7 +20,7 @@ models:
       data: [
         {
           doctorId: 1,
-          days: [ 1, 2, 3 ],
+          # days: [ 1, 2, 3 ],
           timeslots: [ "9 AM to 12 PM" ],
           createdAt: "2015-01-01T00:00:00Z",
         }
@@ -30,7 +30,7 @@ models:
       data: [
           {
             doctorId: 1,
-            consultingDays: [ 1, 2, 3 ],
+            # consultingDays: [ 1, 2, 3 ],
             consultingFromTime: "9:30 AM",
             consultingToTime: "12:00 PM",
             bookingFromTime: "8:00 AM",
