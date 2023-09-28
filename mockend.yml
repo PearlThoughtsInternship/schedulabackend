@@ -19,8 +19,8 @@ models:
       id: {int: [0, 12]}
       _count: 40
       doctorId: {int: [1, 12]}
-      days: {oneOfInt: [ 1, 3, 4]}
-      timeslots: {oneOfString: []}
+      days: { oneOfInt: [ 1, 3, 4]}
+      timeslots: { oneOfString: ["a", "b", "c"]}
       createdAt: {dateTime: [2015-01-01T00:00:00Z, 2023-12-31T23:59:59Z] }
   Session:
     belongsTo: [Doctor]
