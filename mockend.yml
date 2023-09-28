@@ -9,6 +9,8 @@ models:
     name: { string: [0,20]}
     specialty: { string: [0,20]}
     gender: { string: [0,6]}
+    createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
+    isAvailable: { bool: 20 }
 
   Availability :
     belongsTo: [Doctors]
@@ -17,3 +19,4 @@ models:
        day: {string: [0, 20]}
        timeslots: []
        doctorId: {int: [0, 12]}
+       createdAt: { dateTime: [2023-01-01T00:00:00Z, 2040-12-31T23:59:59Z] }
