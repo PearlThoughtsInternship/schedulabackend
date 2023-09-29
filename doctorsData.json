@@ -1,0 +1,480 @@
+[
+    {
+      "doctorId": 1,
+      "name": "Dr. John Doe",
+      "ivrNumber": "+1-123-456-7890",
+      "specialization": "Cardiologist",
+      "sessions": [
+        {
+          "sessionId": 101,
+          "consultingDays": [1, 2, 3],
+          "consultingFromTime": "9:00 AM",
+          "consultingToTime": "12:00 PM",
+          "bookingFromTime": "8:00 AM",
+          "bookingToTime": "11:30 AM"
+        },
+        {
+          "sessionId": 102,
+          "consultingDays": [4, 5],
+          "consultingFromTime": "2:00 PM",
+          "consultingToTime": "5:00 PM",
+          "bookingFromTime": "1:30 PM",
+          "bookingToTime": "4:30 PM"
+        }
+      ],
+      "address": "123 Main Street",
+      "location": "Cityville",
+      "mapLink": "https://maps.example.com/dr-john-doe"
+    },
+    {
+      "doctorId": 2,
+      "name": "Dr. Jane Smith",
+      "ivrNumber": "+1-987-654-3210",
+      "specialization": "Dermatologist",
+      "sessions": [
+        {
+          "sessionId": 201,
+          "consultingDays": [2, 4],
+          "consultingFromTime": "10:00 AM",
+          "consultingToTime": "1:00 PM",
+          "bookingFromTime": "9:30 AM",
+          "bookingToTime": "12:30 PM"
+        }
+      ],
+      "address": "456 Oak Avenue",
+      "location": "Townsville",
+      "mapLink": "https://maps.example.com/dr-jane-smith"
+    },
+    {
+      "doctorId": 3,
+      "name": "Dr. Laura White",
+      "ivrNumber": "+1-555-333-4444",
+      "specialization": "Obstetrician",
+      "sessions": [
+        {
+          "sessionId": 31,
+          "consultingDays": [1, 3, 5],
+          "consultingFromTime": "9:00 AM",
+          "consultingToTime": "12:00 PM",
+          "bookingFromTime": "8:30 AM",
+          "bookingToTime": "11:30 AM"
+        },
+        {
+          "sessionId": 32,
+          "consultingDays": [2, 4],
+          "consultingFromTime": "1:00 PM",
+          "consultingToTime": "4:00 PM",
+          "bookingFromTime": "12:30 PM",
+          "bookingToTime": "3:30 PM"
+        }
+      ],
+      "address": "789 Orchid Lane",
+      "location": "Blossomville",
+      "mapLink": "https://maps.example.com/dr-laura-white"
+    },
+    {
+      "doctorId": 4,
+      "name": "Dr. Samuel Harris",
+      "ivrNumber": "+1-555-444-5555",
+      "specialization": "Urologist",
+      "sessions": [
+        {
+          "sessionId": 41,
+          "consultingDays": [2, 4, 6],
+          "consultingFromTime": "10:00 AM",
+          "consultingToTime": "1:00 PM",
+          "bookingFromTime": "9:30 AM",
+          "bookingToTime": "12:30 PM"
+        },
+        {
+          "sessionId": 42,
+          "consultingDays": [1, 3, 5],
+          "consultingFromTime": "2:00 PM",
+          "consultingToTime": "5:00 PM",
+          "bookingFromTime": "1:30 PM",
+          "bookingToTime": "4:30 PM"
+        }
+      ],
+      "address": "456 Magnolia Avenue",
+      "location": "Petalsville",
+      "mapLink": "https://maps.example.com/dr-samuel-harris"
+    },
+    {
+      "doctorId": 5,
+      "name": "Dr. Ava Wilson",
+      "ivrNumber": "+1-555-555-1234",
+      "specialization": "Dentist",
+      "sessions": [
+        {
+          "sessionId": 51,
+          "consultingDays": [3, 4, 5],
+          "consultingFromTime": "11:00 AM",
+          "consultingToTime": "2:00 PM",
+          "bookingFromTime": "10:30 AM",
+          "bookingToTime": "1:30 PM"
+        },
+        {
+          "sessionId": 52,
+          "consultingDays": [1, 2],
+          "consultingFromTime": "4:00 PM",
+          "consultingToTime": "7:00 PM",
+          "bookingFromTime": "3:30 PM",
+          "bookingToTime": "6:30 PM"
+        }
+      ],
+      "address": "101 Cedar Lane",
+      "location": "Greenvale",
+      "mapLink": "https://maps.example.com/dr-ava-wilson"
+    },
+    {
+      "doctorId": 6,
+      "name": "Dr. James Smith",
+      "ivrNumber": "+1-555-666-7890",
+      "specialization": "Neurologist",
+      "sessions": [
+        {
+          "sessionId": 61,
+          "consultingDays": [1, 2, 3],
+          "consultingFromTime": "9:00 AM",
+          "consultingToTime": "12:00 PM",
+          "bookingFromTime": "8:30 AM",
+          "bookingToTime": "11:30 AM"
+        },
+        {
+          "sessionId": 62,
+          "consultingDays": [4, 5],
+          "consultingFromTime": "1:00 PM",
+          "consultingToTime": "4:00 PM",
+          "bookingFromTime": "12:30 PM",
+          "bookingToTime": "3:30 PM"
+        }
+      ],
+      "address": "567 Willow Road",
+      "location": "Riverside",
+      "mapLink": "https://maps.example.com/dr-james-smith"
+    },
+    {
+      "doctorId": 7,
+      "name": "Dr. Lily Brown",
+      "ivrNumber": "+1-555-777-1234",
+      "specialization": "Psychiatrist",
+      "sessions": [
+        {
+          "sessionId": 71,
+          "consultingDays": [1, 3, 5],
+          "consultingFromTime": "9:00 AM",
+          "consultingToTime": "12:00 PM",
+          "bookingFromTime": "8:30 AM",
+          "bookingToTime": "11:30 AM"
+        },
+        {
+          "sessionId": 72,
+          "consultingDays": [2, 4],
+          "consultingFromTime": "1:00 PM",
+          "consultingToTime": "4:00 PM",
+          "bookingFromTime": "12:30 PM",
+          "bookingToTime": "3:30 PM"
+        }
+      ],
+      "address": "890 Cherry Avenue",
+      "location": "Valleytown",
+      "mapLink": "https://maps.example.com/dr-lily-brown"
+    },
+    {
+      "doctorId": 21,
+      "name": "Dr. Sarah Johnson",
+      "ivrNumber": "+1-555-123-4567",
+      "specialization": "Orthopedic Surgeon",
+      "sessions": [
+        {
+          "sessionId": 211,
+          "consultingDays": [1, 2, 3],
+          "consultingFromTime": "10:00 AM",
+          "consultingToTime": "1:00 PM",
+          "bookingFromTime": "9:30 AM",
+          "bookingToTime": "12:30 PM"
+        },
+        {
+          "sessionId": 212,
+          "consultingDays": [4, 5],
+          "consultingFromTime": "3:00 PM",
+          "consultingToTime": "6:00 PM",
+          "bookingFromTime": "2:30 PM",
+          "bookingToTime": "5:30 PM"
+        }
+      ],
+      "address": "789 Oak Street",
+      "location": "Townsville",
+      "mapLink": "https://maps.example.com/dr-sarah-johnson"
+    },
+    {
+      "doctorId": 22,
+      "name": "Dr. Michael Lee",
+      "ivrNumber": "+1-555-987-6543",
+      "specialization": "Pediatrician",
+      "sessions": [
+        {
+          "sessionId": 221,
+          "consultingDays": [1, 3, 5],
+          "consultingFromTime": "9:30 AM",
+          "consultingToTime": "12:30 PM",
+          "bookingFromTime": "9:00 AM",
+          "bookingToTime": "12:00 PM"
+        },
+        {
+          "sessionId": 222,
+          "consultingDays": [2, 4],
+          "consultingFromTime": "2:00 PM",
+          "consultingToTime": "5:00 PM",
+          "bookingFromTime": "1:30 PM",
+          "bookingToTime": "4:30 PM"
+        }
+      ],
+      "address": "456 Elm Street",
+      "location": "Villagetown",
+      "mapLink": "https://maps.example.com/dr-michael-lee"
+    },
+    {
+      "doctorId": 23,
+      "name": "Dr. Emily Williams",
+      "ivrNumber": "+1-555-789-1234",
+      "specialization": "Ophthalmologist",
+      "sessions": [
+        {
+          "sessionId": 231,
+          "consultingDays": [2, 3, 4],
+          "consultingFromTime": "10:00 AM",
+          "consultingToTime": "1:00 PM",
+          "bookingFromTime": "9:30 AM",
+          "bookingToTime": "12:30 PM"
+        },
+        {
+          "sessionId": 232,
+          "consultingDays": [1, 5],
+          "consultingFromTime": "3:00 PM",
+          "consultingToTime": "6:00 PM",
+          "bookingFromTime": "2:30 PM",
+          "bookingToTime": "5:30 PM"
+        }
+      ],
+      "address": "789 Maple Avenue",
+      "location": "Forestville",
+      "mapLink": "https://maps.example.com/dr-emily-williams"
+    },
+    {
+      "doctorId": 24,
+      "name": "Dr. Daniel Brown",
+      "ivrNumber": "+1-555-234-5678",
+      "specialization": "Dentist",
+      "sessions": [
+        {
+          "sessionId": 241,
+          "consultingDays": [2, 4, 6],
+          "consultingFromTime": "11:00 AM",
+          "consultingToTime": "2:00 PM",
+          "bookingFromTime": "10:30 AM",
+          "bookingToTime": "1:30 PM"
+        },
+        {
+          "sessionId": 242,
+          "consultingDays": [1, 3, 5],
+          "consultingFromTime": "4:00 PM",
+          "consultingToTime": "7:00 PM",
+          "bookingFromTime": "3:30 PM",
+          "bookingToTime": "6:30 PM"
+        }
+      ],
+      "address": "101 Oak Lane",
+      "location": "Treetown",
+      "mapLink": "https://maps.example.com/dr-daniel-brown"
+    },
+    {
+      "doctorId": 25,
+      "name": "Dr. Olivia Garcia",
+      "ivrNumber": "+1-555-876-5432",
+      "specialization": "Neurologist",
+      "sessions": [
+        {
+          "sessionId": 251,
+          "consultingDays": [1, 2, 3],
+          "consultingFromTime": "9:00 AM",
+          "consultingToTime": "12:00 PM",
+          "bookingFromTime": "8:30 AM",
+          "bookingToTime": "11:30 AM"
+        },
+        {
+          "sessionId": 252,
+          "consultingDays": [4, 5],
+          "consultingFromTime": "1:00 PM",
+          "consultingToTime": "4:00 PM",
+          "bookingFromTime": "12:30 PM",
+          "bookingToTime": "3:30 PM"
+        }
+      ],
+      "address": "567 Pine Street",
+      "location": "Hillside",
+      "mapLink": "https://maps.example.com/dr-olivia-garcia"
+    },
+    {
+      "doctorId": 26,
+      "name": "Dr. William Clark",
+      "ivrNumber": "+1-555-765-4321",
+      "specialization": "Psychiatrist",
+      "sessions": [
+        {
+          "sessionId": 261,
+          "consultingDays": [3, 4, 5],
+          "consultingFromTime": "10:30 AM",
+          "consultingToTime": "1:30 PM",
+          "bookingFromTime": "10:00 AM",
+          "bookingToTime": "1:00 PM"
+        },
+        {
+          "sessionId": 262,
+          "consultingDays": [1, 2],
+          "consultingFromTime": "3:30 PM",
+          "consultingToTime": "6:30 PM",
+          "bookingFromTime": "3:00 PM",
+          "bookingToTime": "6:00 PM"
+        }
+      ],
+      "address": "890 Cedar Road",
+      "location": "Valleytown",
+      "mapLink": "https://maps.example.com/dr-william-clark"
+    },
+    {
+      "doctorId": 27,
+      "name": "Dr. Sophia Rodriguez",
+      "ivrNumber": "+1-555-543-7890",
+      "specialization": "Gynecologist",
+      "sessions": [
+        {
+          "sessionId": 271,
+          "consultingDays": [1, 3, 5],
+          "consultingFromTime": "9:00 AM",
+          "consultingToTime": "12:00 PM",
+          "bookingFromTime": "8:30 AM",
+          "bookingToTime": "11:30 AM"
+        },
+        {
+          "sessionId": 272,
+          "consultingDays": [2, 4],
+          "consultingFromTime": "1:00 PM",
+          "consultingToTime": "4:00 PM",
+          "bookingFromTime": "12:30 PM",
+          "bookingToTime": "3:30 PM"
+        }
+      ],
+      "address": "123 Rose Avenue",
+      "location": "Blossomville",
+      "mapLink": "https://maps.example.com/dr-sophia-rodriguez"
+    },
+    {
+      "doctorId": 28,
+      "name": "Dr. Ethan Wilson",
+      "ivrNumber": "+1-555-876-2345",
+      "specialization": "ENT Specialist",
+      "sessions": [
+        {
+          "sessionId": 281,
+          "consultingDays": [2, 4, 6],
+          "consultingFromTime": "10:00 AM",
+          "consultingToTime": "1:00 PM",
+          "bookingFromTime": "9:30 AM",
+          "bookingToTime": "12:30 PM"
+        },
+        {
+          "sessionId": 282,
+          "consultingDays": [1, 3, 5],
+          "consultingFromTime": "2:00 PM",
+          "consultingToTime": "5:00 PM",
+          "bookingFromTime": "1:30 PM",
+          "bookingToTime": "4:30 PM"
+        }
+      ],
+      "address": "456 Lily Lane",
+      "location": "Petalsville",
+      "mapLink": "https://maps.example.com/dr-ethan-wilson"
+    },
+    {
+      "doctorId": 29,
+      "name": "Dr. Olivia Adams",
+      "ivrNumber": "+1-555-234-6789",
+      "specialization": "Dermatologist",
+      "sessions": [
+        {
+          "sessionId": 291,
+          "consultingDays": [3, 4, 5],
+          "consultingFromTime": "11:00 AM",
+          "consultingToTime": "2:00 PM",
+          "bookingFromTime": "10:30 AM",
+          "bookingToTime": "1:30 PM"
+        },
+        {
+          "sessionId": 292,
+          "consultingDays": [1, 2],
+          "consultingFromTime": "4:00 PM",
+          "consultingToTime": "7:00 PM",
+          "bookingFromTime": "3:30 PM",
+          "bookingToTime": "6:30 PM"
+        }
+      ],
+      "address": "789 Sunflower Street",
+      "location": "Sunsetville",
+      "mapLink": "https://maps.example.com/dr-olivia-adams"
+    },
+    {
+      "doctorId": 30,
+      "name": "Dr. Benjamin Hall",
+      "ivrNumber": "+1-555-987-3456",
+      "specialization": "Orthopedic Surgeon",
+      "sessions": [
+        {
+          "sessionId": 301,
+          "consultingDays": [2, 4, 6],
+          "consultingFromTime": "9:30 AM",
+          "consultingToTime": "12:30 PM",
+          "bookingFromTime": "9:00 AM",
+          "bookingToTime": "12:00 PM"
+        },
+        {
+          "sessionId": 302,
+          "consultingDays": [1, 3, 5],
+          "consultingFromTime": "2:00 PM",
+          "consultingToTime": "5:00 PM",
+          "bookingFromTime": "1:30 PM",
+          "bookingToTime": "4:30 PM"
+        }
+      ],
+      "address": "101 Meadow Lane",
+      "location": "Greenvale",
+      "mapLink": "https://maps.example.com/dr-benjamin-hall"
+    },
+    {
+      "doctorId": 31,
+      "name": "Dr. Ava Martinez",
+      "ivrNumber": "+1-555-765-7890",
+      "specialization": "Psychiatrist",
+      "sessions": [
+        {
+          "sessionId": 311,
+          "consultingDays": [1, 3, 5],
+          "consultingFromTime": "9:00 AM",
+          "consultingToTime": "12:00 PM",
+          "bookingFromTime": "8:30 AM",
+          "bookingToTime": "11:30 AM"
+        },
+        {
+          "sessionId": 312,
+          "consultingDays": [2, 4],
+          "consultingFromTime": "1:00 PM",
+          "consultingToTime": "4:00 PM",
+          "bookingFromTime": "12:30 PM",
+          "bookingToTime": "3:30 PM"
+        }
+      ],
+      "address": "567 River Road",
+      "location": "Riverside",
+      "mapLink": "https://maps.example.com/dr-ava-martinez"
+    }
+]
